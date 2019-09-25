@@ -1,0 +1,8 @@
+<button (click)="goToParent(1)">Go to Parent</button><br />
+<a
+  [routerLink]="['/parent', 5, 'edit']"
+  [queryParams]="{ allowEdit: '1' }"
+  fragment="loading"
+  >Go to parent</a
+>
+<router-outlet></router-outlet>
